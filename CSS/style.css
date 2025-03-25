@@ -50,7 +50,7 @@ body {
             width: 80%;
             object-fit: cover;
             border-radius: 50%;
-            border: 2px solid rgb(27, 173, 83);
+            border: 2px solid var(--primary-color);
         }
     }
 }
@@ -81,11 +81,11 @@ body {
     flex-direction: column;
     padding: 20px 0;
     gap: 15px;
-    border-bottom: 1px solid rgb(27, 173, 83);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .heading2{
-    background-color: rgb(27, 173, 83);
+    background-color: var(--primary-color);
     color: whitesmoke;
     border-radius: 2px;
     padding: 5px 0;
