@@ -18,7 +18,6 @@ body {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     margin: 30px 10px;
     border-radius: 10px;
-
 }
 .header{
     display: flex;
@@ -63,70 +62,35 @@ body {
         flex-direction: column;
         gap: 20px;
         .about{
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            gap: 10px;
-            border-bottom: 1px solid rgb(27, 173, 83);
-            h2{
-                background-color: rgb(27, 173, 83);
-                color: whitesmoke;
-                border-radius: 2px;
-                padding: 5px 0;
-            }
             p{
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 28px;
                 text-align: center;
                 letter-spacing: 0.8px;
+                padding-top: 10px;
             }
         }
-        .education{
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            gap: 15px;
-            border-bottom: 1px solid rgb(27, 173, 83);
-            
-
-        }
-        .training-course{
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            gap: 15px;
-            border-bottom: 1px solid rgb(27, 173, 83);
-        }
-        .exptertise{
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            gap: 15px;
-            border-bottom: 1px solid rgb(27, 173, 83);
-        }
     }
 }
 
-footer{
-    margin: 10px 20px;
+.main > .section1 > .education,
+.main > .section1 > .training-course,
+.main > .section1 > .exptertise{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    section{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+    padding: 20px 0;
+    gap: 15px;
+    border-bottom: 1px solid rgb(27, 173, 83);
 }
 
-h2{
+.heading2{
     background-color: rgb(27, 173, 83);
     color: whitesmoke;
     border-radius: 2px;
     padding: 5px 0;
 }
-ul{
+.lists{
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -140,6 +104,28 @@ ul{
         font-weight: 700;
         span{
             font-weight: 500;
+        }
+    }
+}
+
+footer{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .referances{
+            div{
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: start;
+                padding-left: 10px;
+            }
         }
     }
 }
@@ -167,9 +153,19 @@ ul{
             width: 48%;
         }
     }
+    footer{
+        section{
+            flex-direction: row;
+        width: 100%;
+        }
+    }
+    .languages{
+        width: 48%;
+    }
+    .referances{
+        width: 48%;
+    }
 }
-
-
 
 
 @media screen and (min-width: 1024px) {
