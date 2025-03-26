@@ -29,14 +29,32 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 18px;
         h1{
             margin-top: 10px;
             font-size: 50px;
             font-weight: 600;
+            color: var(--primary-color);
         }
         span{
-            font-size: 20px;
+            font-size: 24px;
+        }
+        .contact{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li{
+                i{
+                    font-size: 20px;
+                    color: var(--primary-color);
+                }
+                span{
+                    font-size: 18px;
+                    padding-left: 2px;
+                    color: rgb(113, 109, 109);
+                }
+            }
         }
     }
     .img{
@@ -132,10 +150,26 @@ footer{
 
 
 @media screen and (min-width: 768px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 25px 20px;
+        .content{
+            align-items: start;
+            h1{
+                margin-top: 0;
+            }
+            .contact{
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px 30px;
+            }
+        }
+    }
+
     .main > .section1{
         flex-direction: row;
         flex-wrap: wrap;
-        
         justify-content: space-between;
         .about{
             width: 48%;
@@ -173,13 +207,16 @@ footer{
         margin: 50px auto;
     }
     .header{
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 50px;
+        margin: 25px 30px;
         .content{
             align-items: start;
             h1{
                 margin-top: 0;
+            }
+            .contact{
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px 25px;
             }
         }
     }
